@@ -15,17 +15,15 @@ class ItcastSpider(scrapy.Spider):
     # 检查域名进行筛选（可选参数）爬取范围
     allowed_domains = ['sysaqks.snnu.edu.cn']
     # 开始请求列表（可以为元组）
-    # start_urls = ['http://sysaqks.snnu.edu.cn/redir.php?catalog_id=6&cmd=learning&tikubh=1471']
-    # exam_list = ['tongshi','huaxue','yixue','jixie','dianqi','fushe','tezhong','xiaofang']
-    # examLib = {'tongshi':[1471,76],'huaxue':[1436,77],'yixue':[1467,40],'jixie':[1484,27],'dianqi':[1485,19],'fushe':[1486,12],'tezhong':[4199,10],'xiaofang':[4200,31]}
-    # KuNumber = 0
+    start_urls = ['http://sysaqks.snnu.edu.cn/redir.php?catalog_id=6&cmd=learning&tikubh=1471']
+    exam_list = ['tongshi','huaxue','yixue','jixie','dianqi','fushe','tezhong','xiaofang']
+    examLib = {'tongshi':[1471,76],'huaxue':[1436,77],'yixue':[1467,40],'jixie':[1484,27],'dianqi':[1485,19],'fushe':[1486,12],'tezhong':[4199,10],'xiaofang':[4200,31]}
+    KuNumber = 0
 
 # 实现翻页爬取
-    baseURL = "http://sysaqks.snnu.edu.cn/redir.php?catalog_id=6&cmd=learning&tikubh=1471&page="
-    # baseUrl = "tikubh=1471&page="
-
+    baseURL = "http://sysaqks.snnu.edu.cn/redir.php?catalog_id=6&cmd=learning&"
     offset = 1
-    start_urls = [baseURL+str(offset)]
+    start_urls = [baseURL+'tikubh='+str(examLib[exam_list[KuNumber]][0])+'&page='+str(offset)]
 
 
 # 解析响应参数
@@ -64,8 +62,26 @@ class ItcastSpider(scrapy.Spider):
            yield item
         # 返回值就传给引擎
        # return item_list
-       if self.offset < 76:
-            self.offset += 1
-            url = self.baseURL+str(self.offset)
-            print(url)
-            yield scrapy.Request(url,callback = self.parse)
+       #单库爬寻
+       # if self.offset < 76:
+       #      self.offset += 1
+       #      url = self.baseURL+str(self.offset)
+       #      print(url)
+       #      yield scrapy.Request(url,callback = self.parse)
+
+       #拼接方式：多库爬寻
+       #当第一个库爬寻完毕，爬寻下一个库
+       print(self.examLib[self.exam_list[self.KuNumber]][1])
+       print(len(self.exam_list))
+       print(self.KuNumber)
+       if (self.offset < self.examLib[self.exam_list[self.KuNumber]][1] and self.KuNumber < len(self.exam_list)):
+           self.offset +=1
+           url = self.baseURL+'tikubh='+str(self.examLib[self.exam_list[self.KuNumber]][0])+'&page='+str(self.offset)
+           print(url)
+           yield scrapy.Request(url,callback = self.parse)
+       elif self.KuNumber < len(self.exam_list):
+           self.offset = 1
+           self.KuNumber += 1
+           url = self.baseURL+'tikubh='+str(self.examLib[self.exam_list[self.KuNumber]][0])+'&page='+str(self.offset)
+           print(url)
+           yield scrapy.Request(url,callback = self.parse)

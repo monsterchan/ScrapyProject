@@ -12,7 +12,7 @@ import json
 
 class ItcastPipeline:
     def __init__(self):
-        self.f = open("itcast_pipeline.json","wb")
+        self.f = open("examLib.json","wb")
         # self.f.write("[".encode("utf-8"))
 
     def process_item(self, item, spider):
