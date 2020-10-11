@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38876ab1-a876-4e43-ba53-6d16e9e5dae7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ITcast/ITcast/spiders/itcast.py" beforeDir="false" afterPath="$PROJECT_DIR$/ITcast/ITcast/spiders/itcast.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITcast/ITcast/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
+            <state relative-caret-position="184">
               <caret line="8" column="16" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
@@ -24,8 +25,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/itcast.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="965">
+              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+              <folding>
+                <element signature="e#138#151#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/examLib.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-32776">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -33,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITcast/ITcast/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="299">
               <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="e#255#290#0" expanded="true" />
@@ -45,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITcast/ITcast/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="3105">
               <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
             </state>
           </provider>
@@ -62,6 +75,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="pinjie" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -74,16 +92,16 @@
         <option value="$PROJECT_DIR$/ITcast/ITcast/spiders/itcast_pipeline.json" />
         <option value="$PROJECT_DIR$/ITcast/notebook.md" />
         <option value="$PROJECT_DIR$/ITcast/ITcast/pipelines.py" />
-        <option value="$PROJECT_DIR$/ITcast/ITcast/spiders/itcast.py" />
         <option value="$PROJECT_DIR$/ITcast/ITcast/spiders/examLib.json" />
+        <option value="$PROJECT_DIR$/ITcast/ITcast/spiders/itcast.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="y" value="97" />
+    <option name="x" value="-5" />
+    <option name="y" value="96" />
     <option name="width" value="1940" />
-    <option name="height" value="953" />
+    <option name="height" value="954" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -198,6 +216,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.itcast" />
+        <item itemvalue="Python.itcast" />
+        <item itemvalue="Python.itcast" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +235,8 @@
       <workItem from="1602233726186" duration="3576000" />
       <workItem from="1602237312188" duration="2457000" />
       <workItem from="1602243516368" duration="11101000" />
-      <workItem from="1602311423593" duration="17735000" />
+      <workItem from="1602311423593" duration="17955000" />
+      <workItem from="1602394173481" duration="7795000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1602332744662</created>
@@ -238,11 +259,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602335206225</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="multi lib for Scrapy By pinjie">
+      <created>1602336617210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602336617210</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35010000" />
+    <option name="totallyTimeSpent" value="43025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -257,21 +285,21 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19571045" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19839142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.4899464" visible="true" weight="0.21954674" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4899464" weight="0.21954674" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.55563" weight="0.4582744" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3385269" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.39518413" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.087801605" side_tool="true" weight="0.3649222" />
       <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.4966488" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.91219836" weight="0.23512748" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.91219836" visible="true" weight="0.12889518" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.90683645" weight="0.46110326" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -331,12 +359,27 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="single lib for Scrapy" />
     <MESSAGE value="multi lib for Scrapy" />
-    <option name="LAST_COMMIT_MESSAGE" value="multi lib for Scrapy" />
+    <MESSAGE value="multi lib for Scrapy By pinjie" />
+    <option name="LAST_COMMIT_MESSAGE" value="multi lib for Scrapy By pinjie" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ScrapyProject$itcast.coverage" NAME="itcast Coverage Results" MODIFIED="1602250208902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ITcast/ITcast/spiders" />
@@ -381,13 +424,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/exam.json" />
-    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/exam.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/exam.csv" />
     <entry file="file://D:/Program Files/DevelopEveronment/python/Lib/typing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1223">
@@ -402,20 +439,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/itcast_pipeline.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414">
-          <caret line="259" column="70" lean-forward="true" selection-start-line="259" selection-start-column="70" selection-end-line="259" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/itcast_pipeline.json" />
     <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -423,27 +447,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Program Files/DevelopEveronment/python/Lib/site-packages/scrapy/http/request/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1901">
           <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="e#255#290#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -457,17 +464,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="e#255#290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/examLib.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="14" lean-forward="true" selection-end-line="1447" />
+        <state relative-caret-position="-32776">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/itcast.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="965">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="e#138#151#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
